@@ -2,11 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/normalize.css">
-   <link href="css/style.css" rel="stylesheet">
     <title>Барбершоп "Бородинский"</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
-   <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="main-header">
@@ -41,25 +40,25 @@
        </div>
        <section class="feauters clearfix">
           <div class="feauters-item">
-             <b class="feauter-name">быстро</b>
+             <span class="feauter-name">быстро</span>
              <p>мы делаем свою работу быстро!два часа пролетят незметнои вы-
              счастливый обладатель стильной стрижки-минутки </p>
           </div>
           <div class="feauters-item">
-             <b class="feauter-name">круто</b>
+             <span class="feauter-name">круто</span>
              <p>забудьте,как вы стриглись раньше.мы
              сделаем из вас звезду футбола или кино!во
              всяком случае внешне  </p>
           </div>
           <div class="feauters-item">
-             <b class="feauter-name">здорово</b>
+             <span class="feauter-name">здорово</span>
              <p>наши мастера-профессионалы своего дела
              и не могут стоить дешево.к тому же,разве
              цена не даёт определённый статус? </p>
           </div>
        </section>
        <div class="index-content clearfix">
-          <div class="index-content-left">
+          <section class="index-content-left">
             <h2 class="index-content-title">новости</h2>
             <ul class="news-preview">
                <li>
@@ -75,8 +74,8 @@
                 </li>
             </ul>
             <a class="btn" href="#">все новости</a>
-          </div>
-          <div class="index-content-right">
+          </section>
+          <section class="index-content-right">
              <h2 class="index-content-title">фотогалерея</h2>
              <div class="gallery">
                 <figure class="gallery-content">
@@ -85,10 +84,10 @@
                 <button class="btn gallery-prev" type="button">назад</button>
                 <button class="btn gallery-next" type="button">вперед</button>
              </div>
-          </div>
+          </section>
        </div>
        <div class="index-content clearfix">
-          <div class="index-content-left">
+          <section class="index-content-left">
             <h2 class="index-content-title">контакная информация</h2>
             <p>барбершоп "бородинский"<br>
                адрес:г. Санкт-Петербург, Б. Конюшенная, д.19/8<br>
@@ -101,19 +100,23 @@
             </p>
             <a class="btn" href="#">как проехать</a>
             <a class="btn" href="#">обратная связь</a>
-          </div>
-          <div class="index-content-right">
+          </section>
+          <section class="index-content-right">
             <h2 class="index-content-title">записаться</h2>
             <p>укажите желаемую дату и время и мы свяжемся с вами для
                подтверждения брони</p>
              <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-                 <input type="text" name="date" value="" placeholder="дата">
-                 <input type="text" name="time" value="" placeholder="время">
-                 <input type="text" name="name" value="" placeholder="ваше имя">
-                 <input type="text" name="phone" value="" placeholder="телефон">
+                 <input id="date" type="text" name="date" value="" placeholder="дата">
+                 <label class="visuallyhidden" for="date">Дата</label>
+                 <input id="time" type="text" name="time" value="" placeholder="время">
+                 <label class="visuallyhidden" for="time">Текст</label>
+                 <input id="name" type="text" name="name" value="" placeholder="ваше имя">
+                 <label class="visuallyhidden" for="name">Текст</label>
+                 <input id="phone" type="text" name="phone" value="" placeholder="телефон">
+                 <label class="visuallyhidden" for="phone">Телефон</label>
                  <button class="btn" type="submit">отправить</button>
              </form>
-         </div>
+         </section>
        </div>
     </main>
     <footer class="main-footer">
